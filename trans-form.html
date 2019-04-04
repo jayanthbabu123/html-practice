@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: url('https://i.pinimg.com/originals/e3/6f/18/e36f18251272e30872b3c57fb17f4126.jpg') no-repeat;
+            background-color: black;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width:400px;
+            background-color: rgba(0,0,0,.8);
+            padding: 40px;
+            box-sizing: border-box;
+            border-radius: 10px
+        }
+        .box .input-box{
+            position: relative;
+        }
+        .box .input-box input{
+            display: block;
+            width: 100%;
+            padding: 7px;
+            font-size: 15px;
+            margin-bottom: 30px;
+            outline: none;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+            color:#fff
+        }
+        .box h3{
+            color: #fff;
+            margin: 0 0 30px;
+            padding: 0;
+        }
+        .box .input-box label{
+            position: absolute;
+            top:-5px;
+            left: 0;
+            padding: 10px 0;
+            transition: .5s;
+            color:#fff;
+            pointer-events: none;
+            
+        }
+        .box .input-box input:focus ~label,
+        .box .input-box input:valid ~label{
+            top: -20px;
+            color: blue;
+        }
+        input[type="submit"]{
+            background: blue;
+            border: 1px solid blue;
+            font-size: 15px;
+            outline: none;
+            padding: 5px 20px;
+            color:#fff;
+            cursor: pointer;
+            border-radius: 5px
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>Login</h3>
+        <div class="input-box">
+            <input type="text"  required />
+            <label>Username</label>
+        </div>
+        <div class="input-box">
+            <input type="password"  required />
+            <label>Password</label>
+        </div>
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </div>
+</body>
+
+</html>

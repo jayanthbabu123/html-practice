@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+        background-image: radial-gradient( circle 722px at 2.2% 50.3%,  rgba(234,93,124,1) 0%, rgba(236,113,100,1) 90% );
+     }
+     .box{
+        background-image: radial-gradient( circle 855px at -5.3% 49%,  
+        rgba(2,65,97,1) 0%, rgba(7,122,159,1) 41.3%,
+         rgba(136,193,197,1) 100.2% );
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top:50%;
+        left:50%;
+        text-align: center
+     }
+     .box input[type="text"],.box input[type="password"]{
+         display: block;
+         margin: 13px auto;
+         padding: 10px;
+         width:70%;
+         font-size: 15px;
+         border-radius: 20px;
+         border: 1px solid white;
+         outline: none;
+         text-align: center;
+         transition: 0.5s
+     }
+     button{
+         padding: 8px 20px;
+         font-size: 14px;
+         border-radius: 5px;
+         background: lime;
+         border: 1px solid lime;
+         outline:none
+     }
+     .box h2{
+         color: white;
+     }
+     .box form{
+         position: relative;
+         top:43%;
+         transform: translate(-50%,-50%);
+         left:50%
+     }
+     .box input:focus{
+         width: 80%;
+         
+     }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form>
+            <h2>Login</h2>
+            <input type="text" placeholder="Enter Username" />
+            <input type="password" placeholder="Enter Password" />
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
